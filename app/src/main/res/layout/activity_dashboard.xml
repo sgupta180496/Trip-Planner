@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sceneray"
+    tools:context=".DashboardActivity">
+
+    <Button
+        android:id="@+id/buttonViewUsers"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/ViewUsers"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEditProfile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonEditProfile"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditProfile" />
+
+    <Button
+        android:id="@+id/buttonCreateTrip"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/CreateTrip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonEditProfile"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/viewTab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewTrips" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/Logout"
+        app:layout_constraintEnd_toEndOf="@+id/buttonViewUsers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonViewUsers"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewUsers" />
+
+    <Button
+        android:id="@+id/buttonViewTrips"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/ViewTrips"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCreateTrip"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonCreateTrip"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateTrip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

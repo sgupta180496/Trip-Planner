@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sceneray"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:id="@+id/editImage"
+        android:layout_width="184dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imageicon" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFirstName1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/textViewFirstName1"
+        app:layout_constraintTop_toBottomOf="@+id/usernametext" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLastName1"
+        app:layout_constraintEnd_toEndOf="@+id/editFirstName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewLastName1"
+        app:layout_constraintTop_toBottomOf="@+id/editFirstName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="@string/SaveProfile"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <TextView
+        android:id="@+id/textViewFirstName1"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:text="@string/FirstName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/usernametext"
+        app:layout_constraintTop_toBottomOf="@+id/usernametext" />
+
+    <TextView
+        android:id="@+id/textViewLastName1"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:text="@string/LastName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFirstName1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstName1" />
+
+    <TextView
+        android:id="@+id/textViewGender1"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:text="@string/Gender"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewLastName1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLastName1" />
+
+    <TextView
+        android:id="@+id/usernametext"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editImage" />
+
+    <TextView
+        android:id="@+id/defaultUsername"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@android:color/white"
+        android:textCursorDrawable="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewFirstName1"
+        app:layout_constraintStart_toEndOf="@+id/usernametext"
+        app:layout_constraintTop_toTopOf="@+id/usernametext" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="316dp"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editLastName"
+        app:layout_constraintStart_toStartOf="@+id/textViewGender1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGender1">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:text="@string/Male"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="158dp"
+            android:layout_height="match_parent"
+            android:text="@string/Female"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
